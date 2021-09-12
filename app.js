@@ -12,6 +12,10 @@ app.get('/', (req, res) => {
   });
 });
 
+app.get('/arquivo', (req, res) => {
+  return res.sendFile(__dirname + '/html/arquivo.html');
+});
+
 app.listen(port, (req, res) => {
   console.log(`Servidor Rodando! Url: http://localhost:${port}`);
 });
