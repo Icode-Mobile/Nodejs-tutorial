@@ -12,8 +12,8 @@ app.get('/', (req, res) => {
   });
 });
 
-app.get('/arquivo', (req, res) => {
-  return res.sendFile(__dirname + '/html/arquivo.html');
+app.use((req, res, next) => {
+  return res.status(404).sendFile(__dirname + '/html/erro.html');
 });
 
 app.listen(port, (req, res) => {
