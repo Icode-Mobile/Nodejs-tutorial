@@ -11,5 +11,10 @@ ou
 ```
 e assim que gerar a pasta node_modules, você roda o seguinte comando para ver a aplicação acontecendo:
 ```bash 
-  expo start
+  yarn start
+```
+ou
+
+```bash
+ npm start
 ```
